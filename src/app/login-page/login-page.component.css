@@ -1,0 +1,87 @@
+.maincontainer{
+    margin: none;
+    background-image:linear-gradient(-60deg, #6691e7,70%, #13c56b) ;
+    border: 1px solid ;
+}
+.col{
+    border: 1px solid; 
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 3px;
+
+}
+.txtalignform{
+    text-align: right;
+}
+.col1{
+background-color: white;
+}
+.col2pd{
+    padding: 34px;
+    text-align: left;
+}
+.headofhead{
+    color: #6691e7;
+}
+.parahead{
+    color: #878a99;
+}
+.labelforform{
+    margin-top: 10px;
+    width: 100%;
+    padding:3px 3px 3px 3px;
+    border-radius: 5px;
+}
+.btn{
+    width: 105%;
+    background-color: #13c56b;
+    margin-left: -20px;
+}
+
+
+.backgroundlogincont1{
+    background-image:url('src\assets\ProjectImages\page1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; 
+  padding: 40px;
+  height: 100%;
+  width:100%;
+  
+ 
+  
+}
+
+.logologin{
+    padding-top: 20px;
+    height: 100%;
+  width: 100%;
+}
+.imagcar{
+    border: 2px solid; 
+  margin-top: 95px;
+  margin-bottom: 70px;
+ 
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding:3px 3px 3px 3px;
+    border-radius: 5px;
+    padding-bottom: 200px;
+}
+
+.pylogo{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.d-block{
+    display: block;
+    height: 100%;
+  
+}

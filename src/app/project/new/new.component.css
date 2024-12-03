@@ -1,0 +1,131 @@
+.containercolor{
+
+    background-color: aliceblue;
+}
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  .matt{
+    padding-top:20px;
+}
+.labelforform{
+  margin-top: 10px;
+  width: 100%;
+  padding:3px 3px 3px 3px;
+  border-radius: 5px;
+}
+.btncol{
+  
+  background-color:#13c56b;
+  color: white;
+}
+.btndiv{
+  
+ color: white;
+  float: end;
+  margin-left: 900px;
+  background-color:#13c56b;
+  border-radius: 5px;
+
+}
+.btndiv2{
+  
+ color: white;
+  float: end;
+  margin-left: 990px;
+  margin-top: -30px;
+}
+
+.btndiv3{
+  color: white;
+  margin-left: 950px;
+  margin-top: -30px;
+
+}
+.btncol2{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #13c56b;
+  color: white;
+}
+.sidebar {
+  /* border: 2px solid black; */
+  margin-left: -25px;
+  /* padding-bottom: 0px; */
+  width: 100px;
+  z-index: 500;
+  position: fixed;
+   top: 0; 
+   height: 100%;
+   background-color: white;
+
+
+  .sidnavpad {
+    padding-top: 4vh;
+    /* justify-content: space-evenly; */
+    /* margin: -10px; */
+    display: flex;
+    
+
+    .sienavdist {
+      padding: 15px 40px;
+      list-style-type: none;
+      /* text-align: left; */
+      /* border: 2px solid black; */
+      display: flex;
+      margin-left: 0px;
+      padding-right: 20px;
+      width: 45vh;
+
+
+
+    }
+
+    .ulshift {
+      padding-left: 0px;
+      padding-top: 15px;
+      /* width: 20px; */
+    }
+
+    /* .ulshift:hover {
+      background-color: black;
+      width: 500px;
+      height: 60px;
+      color: white;
+      display: flex;
+      text-align: center;
+      display: block; */
+    /* } */
+    .dbpgno:hover {
+      background-color: black;
+      width: 260px;
+      height: 60px;
+      color: white;
+      display: flex;
+      text-align: center;
+      display: block;
+
+      .sidehovdisplay {
+        display: inline-block;
+      }
+    }
+  }
+  .sidehovdisplay{
+    display:none;
+
+  }
+  
+
+}
+.fullpage{
+  /* border: 2px solid green; */
+  width: 100%;
+  z-index: 7;
+}
+.showupper{
+  z-index: inherit;
+}

@@ -1,0 +1,129 @@
+.containercolor{
+
+    background-color: aliceblue;
+}
+.searchcontain{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cardheading{
+    background-color: #673ab7;
+    color: white;
+    text-align:start;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* .iconposition{
+   position: ;
+} */
+.noheading{
+    
+    position: absolute;
+    margin-top: -20px;
+    padding-top: 0px;
+    margin-left: -45px;
+    background-color:wheat;
+    
+}
+.textingstyle{
+    --vz-text-opacity: 1;
+    color: #878a99 !important;
+}
+.iconposition{
+ margin-left: 350px;
+ position: absolute;
+ 
+}
+ .marinbot{
+    margin-bottom: 30px;
+ }
+ .colbod{
+   
+    margin: 0px;
+    padding: 10px;
+ }
+ .padcontainer{
+    padding: 9px;
+    background-color: white;
+   
+ }
+ .sidebar {
+    /* border: 2px solid black; */
+    margin-left: -25px;
+    /* padding-bottom: 0px; */
+    width: 100px;
+    z-index: 500;
+    position: fixed;
+     top: 0; 
+     height: 100%;
+     background-color: white;
+  
+  
+    .sidnavpad {
+      padding-top: 4vh;
+      /* justify-content: space-evenly; */
+      /* margin: -10px; */
+      display: flex;
+      
+  
+      .sienavdist {
+        padding: 15px 40px;
+        list-style-type: none;
+        /* text-align: left; */
+        /* border: 2px solid black; */
+        display: flex;
+        margin-left: 0px;
+        padding-right: 20px;
+        width: 45vh;
+  
+  
+  
+      }
+  
+      .ulshift {
+        padding-left: 0px;
+        padding-top: 15px;
+        /* width: 20px; */
+      }
+  
+      /* .ulshift:hover {
+        background-color: black;
+        width: 500px;
+        height: 60px;
+        color: white;
+        display: flex;
+        text-align: center;
+        display: block; */
+      /* } */
+      .dbpgno:hover {
+        background-color: black;
+        width: 260px;
+        height: 60px;
+        color: white;
+        display: flex;
+        text-align: center;
+        display: block;
+  
+        .sidehovdisplay {
+          display: inline-block;
+        }
+      }
+    }
+    .sidehovdisplay{
+      display:none;
+  
+    }
+    
+  
+  }
+  .fullpage{
+    /* border: 2px solid green; */
+    width: 100%;
+    z-index: 7;
+  }
+  .showupper{
+    z-index: inherit;
+  }

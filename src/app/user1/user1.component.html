@@ -1,0 +1,249 @@
+
+<div class="col colling">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add User</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- ..form -->
+        <form [formGroup]="signupform">
+
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <label for="firstname" >First Name</label><br>
+                <input type="text" placeholder="Enter your Name" formControlName="firstName">
+              </div>
+              <div class="col">
+                <label for="lastname">Last Name</label><br>
+                <input type="text" placeholder="Enter your Last Name" formControlName="lastName">
+              </div>
+            </div>
+          </div><br>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <label for="contactnumber">Contact Number</label><br>
+                <input type="text" placeholder="Enter your Contact Number" formControlName="contactNumber">
+              </div>
+              <div class="col">
+                <label for="email"></label><br>
+                <input type="text" placeholder="Enter your Email" formControlName="email">
+              </div>
+            </div>
+          </div><br>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <label for="">Select Role</label><br>
+                <Select>
+                  <option value="choose">Choose..</option>
+                  <option value="">POTAL_ADMIN</option>
+                  <option value="">CLIENT-ADMIN</option>
+                  <option value="">VENDOR_ADMIN</option>
+                  <option value="">CLIENT_TELLECALLER</option>
+                  <option value="">CALLER</option>
+                </Select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><svg
+            xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+            fill="#75FB4C">
+            <path
+              d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z" />
+          </svg>Close</button>
+        <button (click)="getsignup()" type="button" class="btn btn-primary"><svg
+            xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+            fill="#FFFFFF">
+            <path
+              d="M816-672v456q0 29.7-21.15 50.85Q773.7-144 744-144H216q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h456l144 144Zm-72 30L642-744H216v528h528v-426ZM480-252q45 0 76.5-31.5T588-360q0-45-31.5-76.5T480-468q-45 0-76.5 31.5T372-360q0 45 31.5 76.5T480-252ZM264-552h336v-144H264v144Zm-48-77v413-528 115Z" />
+          </svg>Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <button type="submit" class="btn btn-success">+ Add User</button> -->
+  <!-- Button trigger modal -->
+  
+
+
+
+
+  <!-- Modal -->
+  
+</div>
+<div class="sidebar">
+  <div class="wrapper">
+    <div>
+      <img src="/src/assets/ProjectImages/footer-logo (2).png" alt="" width="50" height="50">
+    </div>
+    <div class="sidnavpad">
+      <ul class="ulshift">
+        <li class="sienavdist dbpgno"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path
+              d="M418-340q24 24 62 23.5t56-27.5l224-336-336 224q-27 18-28.5 55t22.5 61Zm62-460q59 0 113.5 16.5T696-734l-76 48q-33-17-68.5-25.5T480-720q-133 0-226.5 93.5T160-400q0 42 11.5 83t32.5 77h552q23-38 33.5-79t10.5-85q0-36-8.5-70T766-540l48-76q30 47 47.5 100T880-406q1 57-13 109t-41 99q-11 18-30 28t-40 10H204q-21 0-40-10t-30-28q-26-45-40-95.5T80-400q0-83 31.5-155.5t86-127Q252-737 325-768.5T480-800Zm7 313Z" />
+          </svg><span class="sidehovdisplay" [routerLink]="['/Dashboard']"> <svg xmlns="http://www.w3.org/2000/svg" height="40px"
+              viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+              <path
+                d="M410.67-330q23.33 23.33 65 22.17 41.66-1.17 61-30.84l218.66-338L420-456q-29 19.33-30.83 61-1.84 41.67 21.5 65Zm68-469.33q57.66 0 117.16 17.83t113.5 58.83l-60 40.67q-41-25.67-87.16-38.17-46.17-12.5-83.52-12.5-137.98 0-234.98 97.98t-97 237.35q0 44.01 12.16 88.34 12.17 44.33 34.5 82.33h570q22.34-36.66 34.5-82.33Q810-354.67 810-400q0-40-11.17-83.67-11.16-43.66-38.16-81.66l42-60Q838-572.33 856.5-517t20.17 112.33q1.66 59-12.34 111.67t-41 98.33q-11.66 21.34-27 28Q781-160 760.67-160H196q-18.33 0-35.67-9Q143-178 134-194.67q-26-47-40-96.83T80-397.33q0-83 31.5-156.17 31.5-73.17 85.67-127.67 54.16-54.5 126.95-86.33t154.55-31.83Zm-3.67 325Z" />
+            </svg> Dashboard</span></li>
+
+        <li class="sienavdist dbpgno">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+            <path
+              d="M120-120v-80h80v-640h400v40h160v600h80v80H680v-600h-80v600H120Zm160-640v560-560Zm160 320q17 0 28.5-11.5T480-480q0-17-11.5-28.5T440-520q-17 0-28.5 11.5T400-480q0 17 11.5 28.5T440-440ZM280-200h240v-560H280v560Z" />
+          </svg>
+          <span class="sidehovdisplay" [routerLink]="['/project']"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+              width="40px" fill="#FFFFFF">
+              <path
+                d="M120-120v-66.67h88V-840h393.33v43.33h151.34v610H840V-120H686v-610h-84.67v610H120Zm154.67-653.33v586.66-586.66ZM447.33-440q17 0 28.5-11.5t11.5-28.5q0-17-11.5-28.5t-28.5-11.5q-17 0-28.5 11.5t-11.5 28.5q0 17 11.5 28.5t28.5 11.5ZM274.67-186.67h260v-586.66h-260v586.66Z" />
+            </svg>Project</span>
+        </li>
+
+        <li class="sienavdist dbpgno"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path
+              d="M360-160q-19 0-34-11t-22-28l-92-241H40v-80h228l92 244 184-485q7-17 22-28t34-11q19 0 34 11t22 28l92 241h172v80H692l-92-244-184 485q-7 17-22 28t-34 11Z" />
+          </svg><span class="sidehovdisplay" [routerLink]="['/leads']"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
+              viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+              <path
+                d="M362-180q-17 0-30.67-9.67-13.66-9.66-19.33-24.66l-95.33-232.34H45.33v-66.66h218l98.67 242 186-473q5.67-15 19.33-24.67 13.67-9.67 30.67-9.67t30.67 9.67q13.66 9.67 19.33 24.67l95.33 231h171.34v66.66h-218L598-687.33l-186 473q-5.67 15-19.33 24.66Q379-180 362-180Z" />
+            </svg>Leads</span></li>
+
+        <li class="sienavdist dbpgno"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path
+              d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+          </svg><span class="sidehovdisplay" [routerLink]="['/client']"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+              fill="#FFFFFF">
+              <path
+                d="M0-240v-56.33q0-40.05 42.33-65.19 42.34-25.15 111.25-25.15 12.45 0 23.93.5 11.49.5 22.49 2.27-10 18.57-15 38.11-5 19.55-5 40.79v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-21.91-4.5-41.29t-14.17-37.56q11-1.82 22.28-2.32 11.29-.5 23.06-.5 69 0 111.16 24.68Q960-337.31 960-296.33V-240H780Zm-471.67-66.67H652v-4q-3.33-31.33-52.17-52Q551-383.33 480-383.33t-119.83 20.66Q311.33-342 308.33-310v3.33ZM153.04-420q-30.04 0-51.54-21.54T80-493.33q0-30.67 21.54-52 21.54-21.34 51.79-21.34 30.67 0 52 21.34 21.34 21.33 21.34 52.29 0 30.04-21.34 51.54Q184-420 153.04-420Zm653.34 0q-30.05 0-51.55-21.54-21.5-21.54-21.5-51.79 0-30.67 21.55-52 21.54-21.34 51.79-21.34 30.66 0 52 21.34Q880-524 880-493.04q0 30.04-21.33 51.54-21.34 21.5-52.29 21.5ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.23-66.67q22.77 0 37.94-15.4 15.16-15.4 15.16-38.16 0-22.77-15.26-37.94-15.27-15.16-37.84-15.16-22.56 0-38.06 15.26-15.5 15.27-15.5 37.84 0 22.56 15.4 38.06 15.4 15.5 38.16 15.5Zm.1 240ZM480-600Z" />
+            </svg>Client</span></li>
+
+        <li class="sienavdist dbpgno"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#000000">
+            <path
+              d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+          </svg><span class="sidehovdisplay" [routerLink]="['/user1']"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+              fill="#FFFFFF">
+              <path
+                d="M0-240v-56.33q0-40.05 42.33-65.19 42.34-25.15 111.25-25.15 12.45 0 23.93.5 11.49.5 22.49 2.27-10 18.57-15 38.11-5 19.55-5 40.79v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-21.91-4.5-41.29t-14.17-37.56q11-1.82 22.28-2.32 11.29-.5 23.06-.5 69 0 111.16 24.68Q960-337.31 960-296.33V-240H780Zm-471.67-66.67H652v-4q-3.33-31.33-52.17-52Q551-383.33 480-383.33t-119.83 20.66Q311.33-342 308.33-310v3.33ZM153.04-420q-30.04 0-51.54-21.54T80-493.33q0-30.67 21.54-52 21.54-21.34 51.79-21.34 30.67 0 52 21.34 21.34 21.33 21.34 52.29 0 30.04-21.34 51.54Q184-420 153.04-420Zm653.34 0q-30.05 0-51.55-21.54-21.5-21.54-21.5-51.79 0-30.67 21.55-52 21.54-21.34 51.79-21.34 30.66 0 52 21.34Q880-524 880-493.04q0 30.04-21.33 51.54-21.34 21.5-52.29 21.5ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.23-66.67q22.77 0 37.94-15.4 15.16-15.4 15.16-38.16 0-22.77-15.26-37.94-15.27-15.16-37.84-15.16-22.56 0-38.06 15.26-15.5 15.27-15.5 37.84 0 22.56 15.4 38.06 15.4 15.5 38.16 15.5Zm.1 240ZM480-600Z" />
+            </svg>Users</span></li>
+
+      </ul>
+    </div>
+
+
+    <nav id="sidebar">
+
+    </nav>
+  </div>
+
+</div>
+
+<mat-drawer-container class="example-container fullpage " autosize>
+  <div class="uppernavbar">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000">
+              <path
+                d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z" />
+            </svg>
+          </button>
+          <div class="example-sidenav-content">
+
+          </div>
+        </div>
+        <div class="col-md-auto mainbox">
+          <div class="humanicon">
+            <link rel="stylesheet" class=""
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+            <span class="material-symbols-outlined">
+              account_circle
+            </span>
+          </div>
+          <div class="col col-lg-2">
+          </div>
+          <div class="textnav">
+            <h6>Propdoor</h6>
+            <p>123456789</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+
+    <div class="showupper">
+      <p>Auto-resizing sidenav</p>
+    </div>
+
+  </mat-drawer>
+<div class="container  ">
+  <div class="container text-center containercolor row"><br><br>
+    <div class="row align-items-start searchcontain">
+      <div class="col">
+        <div><span>
+            <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=search" />
+          </span><input type="text" placeholder="search for Project"></div>
+
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          +Add User
+        </button>
+      </div>
+      
+    </div><br><br>
+    <div *ngFor="let user of user1call.users" class="usercontent col-3">
+      <div class="star"><span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+            <path
+              d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z" />
+          </svg><span class="trio">
+            Active
+      
+        </span>
+        </span></div>
+      <h5>{{ user.firstName }}</h5>
+      <p>{{ user.email}}</p>
+      <p>{{ user.contactNumber}}</p>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <button class="deletebin" (click)="deleteuser(user._id)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#FFFFFF">
+                <path
+                  d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+              </svg></button>
+
+          </div>
+          <div class="col">
+            <!-- One of three columns -->
+          </div>
+          <div class="col ">
+
+            <button class="editbtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#FFFFFF">
+                <path
+                  d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z" />
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

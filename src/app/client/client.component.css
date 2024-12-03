@@ -1,0 +1,106 @@
+.containercolor{
+
+    background-color: aliceblue;
+}
+.searchcontain{
+    background-color:white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.sidebar {
+    /* border: 2px solid black; */
+    margin-left: -25px;
+    /* padding-bottom: 0px; */
+    width: 100px;
+    z-index: 500;
+    position: fixed;
+     top: 0; 
+     height: 100%;
+     background-color: white;
+  
+  
+    .sidnavpad {
+      padding-top: 4vh;
+      /* justify-content: space-evenly; */
+      /* margin: -10px; */
+      display: flex;
+      
+  
+      .sienavdist {
+        padding: 15px 40px;
+        list-style-type: none;
+        /* text-align: left; */
+        /* border: 2px solid black; */
+        display: flex;
+        margin-left: 0px;
+        padding-right: 20px;
+        width: 45vh;
+  
+  
+  
+      }
+  
+      .ulshift {
+        padding-left: 0px;
+        padding-top: 15px;
+        /* width: 20px; */
+      }
+  
+      /* .ulshift:hover {
+        background-color: black;
+        width: 500px;
+        height: 60px;
+        color: white;
+        display: flex;
+        text-align: center;
+        display: block; */
+      /* } */
+      .dbpgno:hover {
+        background-color: black;
+        width: 260px;
+        height: 60px;
+        color: white;
+        display: flex;
+        text-align: center;
+        display: block;
+  
+        .sidehovdisplay {
+          display: inline-block;
+        }
+      }
+    }
+    .sidehovdisplay{
+      display:none;
+  
+    }
+    
+  
+  }
+  .fullpage{
+    /* border: 2px solid green; */
+    width: 100%;
+    z-index: 7;
+  }
+  .showupper{
+    z-index: inherit;
+  }
+  .bdr{
+    border: 1px solid gray;
+    #th{
+        border:1px solid gray ;
+        background-color:#f3f6f9;
+    }
+    #td{
+        border-bottom: 1px solid grey;
+    }
+  }
+
+.badge{
+    background-color: #6691e71a;
+    color: #6691e7;
+}
+.badge2{
+    color: #13c56b;
+    background-color: #13c56b1a;
+}
