@@ -103,4 +103,16 @@
 .badge2{
     color: #13c56b;
     background-color: #13c56b1a;
+    text-transform: uppercase;
+    margin: 3px;
+}
+.badge3{
+  color: #ed5e5e;
+  background-color: #ed5e5e1a;
+  text-transform: uppercase;
+  margin: 3px;
+  padding: 0px;
+}
+.tdd{
+  border-bottom: 1px solid grey;
 }

@@ -1,6 +1,6 @@
 export interface ProjectSummary {
     totalProjects: number;
-    leadsStatus: IProjectLeadStatus[];
+    leadsStatus: ProjectLeadStatus[];
     accepted: number;
     siteVist: number;
     followUp: number;
@@ -10,16 +10,16 @@ export interface ProjectSummary {
     lostToCompetitor: number;
     notConnected: number;
     other: number;
-    recentLeads: IRecentLead[];
+    recentLeads: RecentLead[];
     deliverdleadsStatus: number;
   }
   
-  interface IProjectLeadStatus {
+  interface ProjectLeadStatus {
     _id?: any; 
     pendingLeads: number;
   }
   
-  interface IRecentLead {
+  interface RecentLead {
     type: { enum: any[] }; 
     projects: string[];
     viewCount: number;

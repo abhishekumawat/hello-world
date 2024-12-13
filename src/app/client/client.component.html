@@ -155,7 +155,8 @@
                             <span class="badge">{{item.projectName}}</span>
                         </div>
                     </td >
-                    <td id="td" class="badge2" [ngClass]="client.clientStatus?'active':'disabled'">{{client.clientStatus?'active':'disabled'}}</td>
+                  
+                    <td id="td" class="" [ngClass]="client.clientStatus ? 'badge2 active' : 'badge3 disabled'"  [ngStyle]="{color:client.clientStatus?'green':'red'}">  <div>{{client.clientStatus?'active':'disabled'}}</div></td>
                     <td id="td"><span><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
                                 width="20px" fill="#789DE5">
                                 <path
